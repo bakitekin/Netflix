@@ -9,6 +9,6 @@ Görseller ve Videolar: İlgi çekici görsel ve video içeriklerle zenginleşti
 ## Responsive Tasarım
 Proje, mobil cihazlar, tabletler ve masaüstü bilgisayarlar dahil olmak üzere çeşitli ekran boyutlarına uyum sağlar. Örnek ekran görüntüleri:
 
-##gif
+## gif
 <img src="netflix.gif">
 # Netflix
