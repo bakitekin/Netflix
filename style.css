@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("images/TR-tr-20231120-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  height: 644px;
+  position: relative;
+}
+
+.main .box {
+  height: 644px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  opacity: 0.68;
+}
+
+nav {
+  max-width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  height: 100px;
+  position: relative;
+}
+
+nav img {
+  width: 200px;
+  color: red;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  border: 0.5px solid white;
+  font-weight: 400;
+  padding: 3px 8px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  z-index: 10;
+}
+
+nav button:hover {
+  background-color: white;
+  color: red;
+}
+
+.hero {
+  height: calc(100% - 100px);
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  gap: 23px;
+}
+
+.hero > :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.hero :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.seperation {
+  background-color: rgb(46, 44, 44);
+  height: 7px;
+  position: relative;
+  z-index: 20;
+}
+
+.btn,
+.btn.btn-red-sm {
+  background-color: #f30f20;
+  color: white;
+  border: none;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.btn.btn-red:hover,
+.btn.btn-red-sm:hover {
+  background-color: white;
+  color: #f30f20;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+.hero input,
+.main input {
+  color: white;
+  border-radius: 4px;
+  padding: 7px 14px 8px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(248, 243, 243, 0.5);
+  outline: none;
+  font-size: 19px;
+}
+
+.first {
+  display: flex;
+  max-width: 70vw;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: auto;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 850px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  right: 99px;
+  top: 150px;
+  width: 650px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 60px;
+}
+
+.container img {
+  width: 850px;
+  position: relative;
+  z-index: 10;
+}
+
+.container video {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 850px;
+  height: 42%;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+
+.fqa {
+  color: white;
+  padding: 34px;
+}
+
+.fqa h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faqbox {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  font-size: 24px;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 16px auto;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.box-2 {
+  margin-bottom: 30px;
+}
+
+.faqbox:hover {
+  background-color: #444444;
+}
+
+footer {
+  max-width: 60vw;
+  color: white;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+  font-size: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer a {
+  font-size: 16px;
+  color: white;
+}
+
+.footer-item a:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }
+
+  .secImg img {
+    width: 600px;
+  }
+
+  .secImg video {
+    width: 420px;
+  }
+
+  .container img {
+    width: 600px;
+  }
+
+  .container video {
+    width: 600px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 30px;
+  }
+
+  .hero > :nth-child(2),
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  section.first > div :nth-child(1) {
+    font-size: 30px;
+  }
+
+  section.first > div :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .fqa h2 {
+    font-size: 30px;
+  }
+
+  .faqbox {
+    font-size: 18px;
+  }
+
+  .box-2 .buttons-2 {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
